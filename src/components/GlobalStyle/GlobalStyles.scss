@@ -1,0 +1,30 @@
+@import 'normalize.css';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: #00575C;
+    --secondary-color: #FFB800;
+    --color-white: #fff;
+    --color-black:#000;
+    --background-color: #f7f7f7;
+}
+input,a,button{
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    color: var(--color-black)
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
