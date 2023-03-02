@@ -8,11 +8,13 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {publicRouters.map((route, index) => {
-            const Layout = route.layout === null ? Fragment : DefaultLayout;
-            const Page = route.component
-            return <Route key={index} path={route.path} element={<Layout><Page /></Layout>} />
-          })}
+        
+            {publicRouters.map((route, index) => {
+              const Layout = route.layout === null ? Fragment : DefaultLayout;
+              const Page = route.component
+              return <Route key={index} path={route.path} element={<Layout><Page /></Layout>} />
+            })}
+         
         </Routes>
       </div>
     </Router>

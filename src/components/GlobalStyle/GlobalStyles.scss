@@ -11,12 +11,13 @@
     --color-black:#000;
     --background-color: #f7f7f7;
 }
-input,a,button{
+input,a,button,li,ul{
     outline: none;
     text-decoration: none;
     list-style: none;
     border: none;
-    color: var(--color-black)
+    color: var(--color-black);
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 html{
@@ -27,4 +28,8 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+.max-width{
+    width: 1240px;
+    max-width: 100%;
 }

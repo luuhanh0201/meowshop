@@ -1,0 +1,99 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.inner {
+    width: 1240px;
+    height: 100%;
+    max-width: 100%;
+}
+.detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31px;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    & span {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    & a {
+        color: var(--color-white);
+        text-decoration: underline;
+    }
+}
+.sub-menu {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: underline;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.sub-menu__item + .sub-menu__item {
+    margin-left: 22px;
+}
+.header-width-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    & .search {
+        position: relative;
+        border: 1px solid var(--primary-color);
+        width: 527px;
+        max-width: 100%;
+        height: 44px;
+        margin-right: 24px;
+        border-radius: 30px;
+
+        & input {
+            border-radius: 30px;
+            width: 100%;
+            height: 100%;
+            padding: 0 34px;
+            font-size: 1.4rem;
+            font-weight: 200;
+        }
+        & button {
+            position: absolute;
+            right: 0;
+            transform: translateY(5%);
+            border-radius: 30px;
+            font-weight: 500;
+            color: var(--color-white);
+            text-transform: uppercase;
+            // height: 100%;
+            margin-right: 2px;
+            padding: 11px 12px;
+            background-color: var(--primary-color);
+
+            &:hover {
+                background-color: var(--secondary-color);
+                cursor: pointer;
+                transition: 0.2s linear;
+            }
+        }
+        & .icon-search{
+            position: absolute;
+            left: 12px;
+            top: 30%;
+        }
+    }
+    & .icon {
+        height: 100%;
+        & img{
+            width: 24px;
+            height: 24px;
+        }
+        & a + a {
+            margin-left: 26px;
+            bottom: 0;
+        }
+    }
+}
