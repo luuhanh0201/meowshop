@@ -10,6 +10,8 @@ const images = {
     iconYoutube : require('~/assets/images/icon_youtube.svg').default,
     iconTwitter : require('~/assets/images/icon_twitter.svg').default,
     iconArrowTop : require('~/assets/images/icon_arrowTop.svg').default,
+    iconStar : require('~/assets/images/icon_star.svg').default,
+    iconNonStar : require('~/assets/images/icon_non-star.svg').default,
 }
 
 export  {images}

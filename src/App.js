@@ -4,11 +4,7 @@ import { publicRouters } from "~/routes";
 import { DefaultLayout } from "./components/Layout";
 
 function App() {
-  fetch('https://jsonplaceholder.typicode.com/posts')
-  .then(res=>res.json())
-  .then(data => {
-    console.log(typeof data)
-  })
+ 
   return (
     <Router>
       <div className="App">

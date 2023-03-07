@@ -102,7 +102,54 @@ const Blogs =
         },
     ]
 
-export { Blogs }
+    const Category = [
+        {
+            images: 'https://lh3.googleusercontent.com/KQCX0_q9lzteds-egvirIF2HTHUKVpmNWZ_Bt-108ETZpkNsvepH6yoL01U--PvVy3ZaZPlX1nugCDFucjnPMGOaTcWjYQRrojOZCYo',
+            type: 'Cat Food'
+        },
+        {
+            images: 'https://lh3.googleusercontent.com/BAWU_ZctwES_rPgHV8Lc47iWehY7UAMrtVbpHfWRHtVv20tXe9QV-IrrXdYcc5bMps6bzqcu3GbXzVLMF_bvxOv_WkV-yG3pRpe0Z5V1',
+            type: 'Cat Accessories'
+        },
+        {
+            images: 'https://lh3.googleusercontent.com/rndsFiOoWuuJg8pXg33uDEvndpzj8rNWnR5j-pCQtfzIH6OPya1p-4flmKx71vBtR9nSseSmQT7ug9uWxl-eo9-fSQqc1lQII7VFaWcR',
+            type: 'Cat Furniture'
+        },
+        {
+            images: 'https://lh3.googleusercontent.com/eE50Xg3tUq59YHcjhZTmrx5OYy6U01Rx6hW9G6yP9S0b1I36DNlsYBJfDsXnMMRV7ad5FjcclQ2RhkqNtb3sOuQ9VaBAfP4zoopkm3w',
+            type: 'Cat Proof Home'
+        },
+        {
+            images: 'https://lh3.googleusercontent.com/59F2QrMw0XEz7eWisjTKsEkz_aWe5bjdUAEyNwoONQ7EeeGy-JJ5DWmjYK9MAFQEwXPWej0-mQqQr1cKwIz6ciWHvYJ3LMvP6Kh30fcvUQ',
+            type: 'Cat Feeders'
+        },
+        {
+            images: 'https://lh3.googleusercontent.com/3jPfYl-gDV3Inlra4DVR471XdueY4v18rSv3Aip2Bh4f4pQJ6IJdVBCMzJVpusYbvDXkzVXJHaTuDGClB9x5aZGMwV7Vi4f_yfXWBQA',
+            type: 'Cat Little Boxes'
+        },
+        {
+            images: 'https://lh3.googleusercontent.com/ty1TKKzB9k-yth4-WWgacT4QopUFf1ZNh3zDlNDzpX0eO9tK4ItCuebDw4pp9V20q5d6ZsyCiIk1j3C4bBYyAdku_lNLzcp4wh15WTc0',
+            type: 'Cat Grooming'
+        },
+        {
+            images: 'https://lh3.googleusercontent.com/sBmy3B5nC4Rgakko57kfcvfde4trd9wE9uIoL2WU9KIeiIts2uJTzrp2w_36VQbaKyYYr70rbi94c4saI_byj4tT18chMdHxrmzzq8d3',
+            type: 'Cat Houses'
+        },
+    ]
+
+
+    const Product = [
+        {
+            id: 1,
+            name: 'New Petkit Pura MAX',
+            type: 'CAT FURNITURE',
+            price: "$999",
+            view: 0,
+            sold: 73,
+            selling: "50%"
+        }
+    ]
+export { Blogs,Category,Product }
 
 
 

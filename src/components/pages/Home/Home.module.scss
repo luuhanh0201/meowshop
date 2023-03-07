@@ -1,0 +1,146 @@
+.wrapper {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+}
+.inner {
+    width: 1240px;
+
+    .banner {
+        position: relative;
+        user-select: none;
+        padding-bottom: 50px;
+        & img {
+            width: 100%;
+        }
+        & .seller {
+            top: 25%;
+            position: absolute;
+            left: 5%;
+            & .title-banner {
+                font-size: 2.4rem;
+                font-weight: 400;
+            }
+            & .sale-banner {
+                font-size: 5rem;
+                font-weight: 700;
+            }
+            & .button {
+                margin-top: 12px;
+                cursor: pointer;
+                border-radius: 100px;
+                padding: 14px 20px 14px 20px;
+                font-size: 2.4rem;
+                font-weight: 500;
+                background-color: var(--primary-color);
+                color: var(--color-white);
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & .item {
+            border-radius: 5px;
+            margin-top: 30px;
+            position: relative;
+            width: 290px;
+            display: flex;
+            justify-content: center;
+            &:hover {
+                box-shadow: 0 1px 1px 1px #ccc;
+                transition: 0.2s linear;
+            }
+            & .button {
+                position: absolute;
+                bottom: 24px;
+                padding: 13px 24px;
+                border-radius: 5px;
+                font-size: 1.6rem;
+                font-weight: 600;
+                background-color: var(--color-white);
+
+                &:hover {
+                    background-color: var(--secondary-color);
+                    transition: 0.2s linear;
+                    color: var(--color-white);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .sale {
+        background-clip: padding-box;
+        position: relative;
+        height: 500px;
+        border: 1px solid var(--primary-color);
+        border-radius: 15px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        & .title {
+            background-color: var(--background-color);
+            background-clip: padding-box;
+            position: absolute;
+            font-size: 2.4rem;
+            font-weight: 500;
+            top: -20px;
+            text-align: center;
+            padding: 0 18px;
+        }
+
+        & .inner-sale {
+            
+            & .item-sale {
+                border-radius: 5px;
+                box-shadow: 0 1px 5px 1px #cccccc;
+                background-color: var(--color-white);
+                & .img-product {
+                    // background-image: url();
+                    background-size: contain;
+                    padding: 100px;
+                    background-repeat: no-repeat;
+                border-radius: 5px;
+
+                }
+                & .info-product {
+                    margin-top: 6px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 6px;
+                    padding-right: 6px;
+
+                    & .name-product {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        width: 200px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-bottom: 6px;
+                    }
+                    & .reviews-product{
+                        margin-top: 12px;
+                        display: flex;
+                        justify-content: center;
+
+                        
+                    }
+                    & .review{
+                        font-size: 1.3rem;
+                        color: #838383;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
