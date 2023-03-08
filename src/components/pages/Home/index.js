@@ -31,9 +31,10 @@ function Home() {
                 <div className={cx('sale')}>
                     <p className={cx('title')}>Deals Of The Month</p>
                     <div className={cx('inner-sale')}>
+                    {/* items */}
                         <div className={cx('item-sale')}>
                             <div
-                                style={{ background: 'url(https://lh3.googleusercontent.com/W5KS8dpgxSe3CQkzDIoXEzHDyMZroUbFAkZN-YUrbrjimgy7Z-yYHdU1KepGDJ_MtWZYKVzB9rJif___2p1-7dXTYZKol8V9qNc5dziHZQ)' }}
+                                style={{ backgroundImage: 'url(https://lh3.googleusercontent.com/W5KS8dpgxSe3CQkzDIoXEzHDyMZroUbFAkZN-YUrbrjimgy7Z-yYHdU1KepGDJ_MtWZYKVzB9rJif___2p1-7dXTYZKol8V9qNc5dziHZQ)' }}
                                 className={cx('img-product')}
                             ></div>
                             <div className={cx('info-product')}>
@@ -48,12 +49,106 @@ function Home() {
                                     <img src={images.iconNonStar} />
                                     <span className={cx('review')}>(73)</span>
                                 </div>
-                                <div>
+                                <div className={cx('buy')}>
                                     <span className={cx('price')}>$999</span>
                                     <span className={cx('sold')}>99 sold</span>
                                 </div>
                             </div>
                         </div>
+                        <div className={cx('item-sale')}>
+                            <div
+                                style={{ backgroundImage: 'url(https://lh3.googleusercontent.com/W5KS8dpgxSe3CQkzDIoXEzHDyMZroUbFAkZN-YUrbrjimgy7Z-yYHdU1KepGDJ_MtWZYKVzB9rJif___2p1-7dXTYZKol8V9qNc5dziHZQ)' }}
+                                className={cx('img-product')}
+                            ></div>
+                            <div className={cx('info-product')}>
+                                <p className={cx('name-product')}>
+                                    New Petkit Pura MAX
+                                </p>
+                                <div className='reviews-product'>
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconNonStar} />
+                                    <span className={cx('review')}>(73)</span>
+                                </div>
+                                <div className={cx('buy')}>
+                                    <span className={cx('price')}>$999</span>
+                                    <span className={cx('sold')}>99 sold</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={cx('item-sale')}>
+                            <div
+                                style={{ backgroundImage: 'url(https://lh3.googleusercontent.com/W5KS8dpgxSe3CQkzDIoXEzHDyMZroUbFAkZN-YUrbrjimgy7Z-yYHdU1KepGDJ_MtWZYKVzB9rJif___2p1-7dXTYZKol8V9qNc5dziHZQ)' }}
+                                className={cx('img-product')}
+                            ></div>
+                            <div className={cx('info-product')}>
+                                <p className={cx('name-product')}>
+                                    New Petkit Pura MAX
+                                </p>
+                                <div className='reviews-product'>
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconNonStar} />
+                                    <span className={cx('review')}>(73)</span>
+                                </div>
+                                <div className={cx('buy')}>
+                                    <span className={cx('price')}>$999</span>
+                                    <span className={cx('sold')}>99 sold</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={cx('item-sale')}>
+                            <div
+                                style={{ backgroundImage: 'url(https://lh3.googleusercontent.com/W5KS8dpgxSe3CQkzDIoXEzHDyMZroUbFAkZN-YUrbrjimgy7Z-yYHdU1KepGDJ_MtWZYKVzB9rJif___2p1-7dXTYZKol8V9qNc5dziHZQ)' }}
+                                className={cx('img-product')}
+                            ></div>
+                            <div className={cx('info-product')}>
+                                <p className={cx('name-product')}>
+                                    New Petkit Pura MAX
+                                </p>
+                                <div className='reviews-product'>
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconNonStar} />
+                                    <span className={cx('review')}>(73)</span>
+                                </div>
+                                <div className={cx('buy')}>
+                                    <span className={cx('price')}>$999</span>
+                                    <span className={cx('sold')}>99 sold</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={cx('item-sale')}>
+                            <div
+                                style={{ backgroundImage: 'url(https://lh3.googleusercontent.com/W5KS8dpgxSe3CQkzDIoXEzHDyMZroUbFAkZN-YUrbrjimgy7Z-yYHdU1KepGDJ_MtWZYKVzB9rJif___2p1-7dXTYZKol8V9qNc5dziHZQ)' }}
+                                className={cx('img-product')}
+                            ></div>
+                            <div className={cx('info-product')}>
+                                <p className={cx('name-product')}>
+                                    New Petkit Pura MAX
+                                </p>
+                                <div className='reviews-product'>
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconStar} />
+                                    <img src={images.iconNonStar} />
+                                    <span className={cx('review')}>(73)</span>
+                                </div>
+                                <div className={cx('buy')}>
+                                    <span className={cx('price')}>$999</span>
+                                    <span className={cx('sold')}>99 sold</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
                     </div>
 
                 </div>
@@ -61,7 +156,7 @@ function Home() {
                 <div className={cx('best-selling')}></div>
                 <div className={cx('blog')}></div>
             </div>
-        </div >
+        </div>
     );
 }
 
