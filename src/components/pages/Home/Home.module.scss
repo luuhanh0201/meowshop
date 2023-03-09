@@ -55,7 +55,7 @@
             display: flex;
             justify-content: center;
             &:hover {
-                box-shadow: 0 1px 1px 1px #ccc;
+                box-shadow: 0 1px 5px 1px #ccc;
                 transition: 0.2s linear;
             }
             & .button {
@@ -79,12 +79,38 @@
     .sale {
         background-clip: padding-box;
         position: relative;
-        height: 500px;
+        // height: 500px;
         border: 1px solid var(--primary-color);
         border-radius: 15px;
         margin-top: 80px;
         display: flex;
         justify-content: center;
+
+        & .prev {
+            background-color: var(--primary-color);
+            position: absolute;
+            padding: 14px 20px;
+            border-radius: 50px;
+            left: -25px;
+            top: 45%;
+            &:hover {
+                background-color: var(--secondary-color);
+                transition: 0.2s linear;
+            }
+        }
+        & .next {
+            background-color: var(--primary-color);
+            padding: 14px 20px;
+
+            position: absolute;
+            border-radius: 50px;
+            right: -25px;
+            top: 45%;
+            &:hover {
+                background-color: var(--secondary-color);
+                transition: 0.2s linear;
+            }
+        }
         & .title {
             background-color: var(--background-color);
             background-clip: padding-box;
@@ -97,6 +123,7 @@
         }
 
         & .inner-sale {
+            padding: 36px 0 72px 0;
             align-items: center;
             display: flex;
             flex-direction: row;
@@ -105,19 +132,65 @@
                 border-radius: 5px;
                 box-shadow: 0 1px 5px 1px #cccccc;
                 background-color: var(--color-white);
+                &:hover {
+                    box-shadow: 1px 1px 4px 1px #ccc;
+                }
                 & .img-product {
+                    overflow: hidden;
+                    position: relative;
                     background-size: contain;
                     padding: 103px;
                     background-repeat: no-repeat;
                     border-radius: 5px;
+
+                    & .sale-product {
+                        position: absolute;
+                        background-color: var(--secondary-color);
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        cursor: alias;
+                        padding: 0 2px;
+                        font-size: 1.4rem;
+
+                        &::after {
+                            content: '';
+                            border-left: 15px solid var(--secondary-color);
+                            border-right: 15px solid var(--secondary-color);
+                            border-bottom: 15px solid transparent;
+                            border-top: 15px solid transparent;
+                            position: absolute;
+                            left: 0px;
+                            top: 6px;
+                            z-index: -1;
+                            padding: 0 0.3px;
+                        }
+                    }
+                    & .like-product {
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                        background-color: var(--color-white);
+                        padding: 6px;
+                        border-radius: 50px;
+                        cursor: pointer;
+                        box-shadow: 0 1px 1px 1px #ccc;
+                    }
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: 0.2s linear;
+                        cursor: zoom-in;
+                    }
                 }
                 & .info-product {
+                    position: relative;
                     margin-top: 6px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     padding-left: 6px;
                     padding-right: 6px;
+                    overflow: hidden;
 
                     & .name-product {
                         font-size: 1.6rem;
@@ -157,6 +230,49 @@
                         }
                     }
                 }
+                & .button-buy {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -40%;
+                    padding: 12px 0;
+                    border-radius: 5px;
+                    font-size: 1.6rem;
+                    background-color: var(--primary-color);
+                    color: var(--color-white);
+                    font-weight: 600;
+                    margin: 0 6px;
+
+                    &:hover {
+                        bottom: 5%;
+                        cursor: pointer;
+                        transition: 0.2s linear;
+                        background-color: var(--secondary-color);
+                    }
+                }
+                & :hover ~ .button-buy {
+                    transition: 0.2s linear;
+                    bottom: 5%;
+                    cursor: pointer;
+                }
+            }
+        }
+        & .dots {
+            display: flex;
+            position: absolute;
+            bottom: 18px;
+
+            & .dot {
+                padding: 12px;
+                background-color: #c3c3c3;
+                border-radius: 50px;
+                margin: 0 6px;
+                cursor: pointer;
+            }
+
+            & .active {
+                background-color: var(--primary-color);
+                opacity: 60%;
             }
         }
     }

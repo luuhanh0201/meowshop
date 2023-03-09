@@ -12,6 +12,10 @@ const images = {
     iconArrowTop : require('~/assets/images/icon_arrowTop.svg').default,
     iconStar : require('~/assets/images/icon_star.svg').default,
     iconNonStar : require('~/assets/images/icon_non-star.svg').default,
+    iconBorderHeart : require('~/assets/images/icon-borderHeart.svg').default,
+    iconFullHeart : require('~/assets/images/icon_fullHeart.svg').default,
+    iconPrev : require('~/assets/images/icon_prev.svg').default,
+    iconNext : require('~/assets/images/icon_next.svg').default,
 }
 
 export  {images}
