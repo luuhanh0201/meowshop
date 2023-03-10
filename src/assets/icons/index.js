@@ -1,4 +1,4 @@
-const images = {
+const icons = {
     logo: require('~/assets/icons/logo.svg').default,
     iconUser : require('~/assets/icons/icon_user.svg').default,
     iconHeart : require('~/assets/icons/icon_heart.svg').default,
@@ -16,6 +16,7 @@ const images = {
     iconFullHeart : require('~/assets/icons/icon_fullHeart.svg').default,
     iconPrev : require('~/assets/icons/icon_prev.svg').default,
     iconNext : require('~/assets/icons/icon_next.svg').default,
+    // banner : require('~/assets/icons/banner.png').default,
 }
 
-export  {images}
+export  {icons}

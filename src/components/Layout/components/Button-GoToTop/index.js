@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { images } from "~/assets/icons";
+import { icons } from "~/assets/icons";
 import styles from './Button-GoToTop.module.scss'
 import classNames from "classnames/bind";
 
@@ -8,7 +8,7 @@ function ButtonGoToTop() {
     return ( 
         <div>
             <button className={cx('button')}>
-                <img src={images.iconArrowTop} />
+                <img src={icons.iconArrowTop} />
             </button>
         </div>
      );

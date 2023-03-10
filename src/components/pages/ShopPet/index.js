@@ -1,11 +1,11 @@
-function CatLittleBoxes() {
+function ShopPet() {
     return ( 
         <div>
             <h1>
-            CatLittleBoxes
+           Shop pet
             </h1>
         </div>
      );
 }
 
-export default CatLittleBoxes;
+export default ShopPet;

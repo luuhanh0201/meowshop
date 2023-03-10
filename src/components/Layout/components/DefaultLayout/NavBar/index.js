@@ -6,6 +6,16 @@ const cx = classNames.bind(styles)
 
 const listMenu = [
     {
+        path: '/',
+        name: 'Home',
+        className: 'home'
+    },
+    {
+        path: '/shop-pet',
+        name: 'Shop Pet',
+        className: 'shop-pet'
+    },
+    {
         path: '/cat-accessories',
         name: 'Cat Accessories',
         className: 'cat-accessories'
@@ -21,26 +31,6 @@ const listMenu = [
         className: 'cat-furniture'
     },
     {
-        path: '/shop-pet',
-        name: 'Shop Pet',
-        className: 'shop-pet'
-    },
-    {
-        path: '/cat-feeders',
-        name: 'Cat Feeders',
-        className: 'cat-feeders'
-    },
-    {
-        path: '/cat-little-boxes',
-        name: 'Cat Little Boxes',
-        className: 'cat-little'
-    },
-    {
-        path: '/cat-houses',
-        name: 'Cat Houses',
-        className: 'cat-houses'
-    },
-    {
         path: '/blog',
         name: 'Blog',
         className: 'blog'
@@ -54,7 +44,7 @@ function NavBar() {
     const handleFocusPage = (page) => {
         setFocusPage(page)
     }
-    console.log(focusPage)
+
 
     return (
         <div className={cx("wrapper")}>

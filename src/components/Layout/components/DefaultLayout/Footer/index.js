@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import styles from "./Footer.module.scss"
 import classNames from "classnames/bind";
-import { images } from "~/assets/icons";
+import { icons } from "~/assets/icons";
 
 const cx = classNames.bind(styles)
 
@@ -12,7 +12,7 @@ function Footer() {
             <div className={cx('inner')}>
                 {/* Footer 1 */}
                 <div className={cx('footer1')}>
-                    <img className={cx('logo')} src={images.logo} />
+                    <img className={cx('logo')} src={icons.logo} />
                     <p className={cx('title')}>We Have Everything For Cat Here!</p>
                     <div className={cx('information')}>
                         <p>Subscribe To Our Newsletter</p>
@@ -43,7 +43,7 @@ function Footer() {
                         <p className={cx('text')}>Try our View in Your Room
                             feature, manage registries
                             and save payment info.</p>
-                        <img style={{cursor: 'pointer'}} src={images.appStore} />
+                        <img style={{cursor: 'pointer'}} src={icons.appStore} />
                     </div>
                     <div className={cx("item4")}>
                         <p className={cx('title')}>Our Company</p>
@@ -55,10 +55,10 @@ function Footer() {
                     <div className={cx("item5")}>
                         <p className={cx('title')}>Social Media</p>
                         <div className={cx('icon-social')}>
-                            <img onClick={()=>{window.open("https://www.facebook.com/ldh211");}} src={images.iconFacebook} />
-                            <img onClick={()=>{window.open("https://www.instagram.com/")}} src={images.iconInstagram} />
-                            <img onClick={()=>{window.open("https://www.youtube.com/")}} src={images.iconYoutube} />
-                            <img onClick={()=>{window.open("https://twitter.com/")}} src={images.iconTwitter} />
+                            <img onClick={()=>{window.open("https://www.facebook.com/ldh211");}} src={icons.iconFacebook} />
+                            <img onClick={()=>{window.open("https://www.instagram.com/")}} src={icons.iconInstagram} />
+                            <img onClick={()=>{window.open("https://www.youtube.com/")}} src={icons.iconYoutube} />
+                            <img onClick={()=>{window.open("https://twitter.com/")}} src={icons.iconTwitter} />
 
                         </div>
                         <ul>

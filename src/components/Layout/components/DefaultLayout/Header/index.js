@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import { images } from '~/assets/icons'
+import { icons } from '~/assets/icons'
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss'
@@ -38,7 +38,7 @@ function Header(children) {
                 </ul>
                 <div className={cx('header-width-search')}>
                     {/* logo */}
-                    <Link to='/'><img className={cx('logo')} src={images.logo} alt='MeoShop' /></Link>
+                    <Link to='/'><img className={cx('logo')} src={icons.logo} alt='MeoShop' /></Link>
                     {/* search */}
 
 
@@ -53,7 +53,7 @@ function Header(children) {
                         <button
                             // onClick={handleSetHistory}
                         >Search</button>
-                        <img className={cx('icon-search')} src={images.iconSearch} />
+                        <img className={cx('icon-search')} src={icons.iconSearch} />
 
                         {/* {
                             searchHistory.length !== 0 ? (
@@ -71,9 +71,9 @@ function Header(children) {
 
                     {/* icon */}
                     <div className={cx('icon')}>
-                        <a className={cx('item__icon item__icon-user')} href='#'><img src={images.iconUser} /></a>
-                        <a className={cx('item__icon item__icon-heart')} href='#'><img src={images.iconHeart} /></a>
-                        <a className={cx('item__icon item__icon-cart')} href='#'><img src={images.iconCart} /></a>
+                        <a className={cx('item__icon item__icon-user')} href='#'><img src={icons.iconUser} /></a>
+                        <a className={cx('item__icon item__icon-heart')} href='#'><img src={icons.iconHeart} /></a>
+                        <a className={cx('item__icon item__icon-cart')} href='#'><img src={icons.iconCart} /></a>
                     </div>
                 </div>
             </div>

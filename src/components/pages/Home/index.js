@@ -2,7 +2,8 @@
 import styles from './Home.module.scss'
 import classNames from "classnames/bind";
 import { Category, Product, Blogs } from '~/assets/FakeData/Data';
-import { images } from '~/assets/icons';
+import { icons } from '~/assets/icons';
+import { images } from '~/assets/images';
 import { useState } from 'react';
 const cx = classNames.bind(styles)
 function Home() {
@@ -14,13 +15,11 @@ function Home() {
             setFavorites([...favorites, index]);
         }
     }
-
     return (
         <div className={cx('wrapper')} >
             <div className={cx('inner')}>
                 <div className={cx('banner')}>
-                    <img src="https://lh3.googleusercontent.com/_zYo84dvnJHdGow4mTz_TWQ4uUyTRt_QWZjP5FMgoxcLgXXBVM_ZFWarTBQ7tvTHkMYYJjXgudSicuZHOun_5dKTqM8Ph8EDRtvBKBY"/>
-
+                    <img src={images.banner} alt='err' />
                     <div className={cx('seller')}>
                         <p className={cx('title-banner')}>CAT SUPPLIES</p>
                         <p className={cx('sale-banner')}>SALE UP TO 50%</p>
@@ -56,7 +55,7 @@ function Home() {
                                                 <img
                                                     onClick={() => handleToggleFavorite(index)}
                                                     className={cx('like-product')}
-                                                    src={isFavorite ? images.iconFullHeart : images.iconBorderHeart}
+                                                    src={isFavorite ? icons.iconFullHeart : icons.iconBorderHeart}
                                                 />
                                             </div>
                                             <div className={cx('info-product')}>
@@ -64,11 +63,11 @@ function Home() {
                                                     {product.name}
                                                 </p>
                                                 <div className='reviews-product'>
-                                                    <img src={images.iconStar} />
-                                                    <img src={images.iconStar} />
-                                                    <img src={images.iconStar} />
-                                                    <img src={images.iconStar} />
-                                                    <img src={images.iconNonStar} />
+                                                    <img src={icons.iconStar} />
+                                                    <img src={icons.iconStar} />
+                                                    <img src={icons.iconStar} />
+                                                    <img src={icons.iconStar} />
+                                                    <img src={icons.iconNonStar} />
                                                     <span className={cx('review')}>(73)</span>
                                                 </div>
                                                 <div className={cx('buy')}>
@@ -89,8 +88,8 @@ function Home() {
                         <span className={cx('dot')}></span>
                     </div>
 
-                    <button className={cx('prev')}><img src={images.iconPrev} /></button>
-                    <button className={cx('next')}><img src={images.iconNext} /></button>
+                    <button className={cx('prev')}><img src={icons.iconPrev} /></button>
+                    <button className={cx('next')}><img src={icons.iconNext} /></button>
 
 
                 </div>
@@ -114,7 +113,7 @@ function Home() {
                                                     <img
                                                         onClick={() => handleToggleFavorite(index)}
                                                         className={cx('like-product')}
-                                                        src={isFavorite ? images.iconFullHeart : images.iconBorderHeart}
+                                                        src={isFavorite ? icons.iconFullHeart : icons.iconBorderHeart}
                                                     />
                                                 </div>
                                                 <div className={cx('info-product')}>
@@ -122,11 +121,11 @@ function Home() {
                                                         {product.name}
                                                     </p>
                                                     <div className='reviews-product'>
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconNonStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconNonStar} />
                                                         <span className={cx('review')}>(73)</span>
                                                     </div>
                                                     <div className={cx('buy')}>
@@ -146,8 +145,8 @@ function Home() {
                             <span className={cx('dot')}></span>
                             <span className={cx('dot')}></span>
                         </div>
-                        <button className={cx('prev')}><img src={images.iconPrev} /></button>
-                        <button className={cx('next')}><img src={images.iconNext} /></button>
+                        <button className={cx('prev')}><img src={icons.iconPrev} /></button>
+                        <button className={cx('next')}><img src={icons.iconNext} /></button>
 
                     </div>
                 </div>
@@ -158,7 +157,7 @@ function Home() {
                             {/* items */}
                             {
                                 Product.map((product, index) => {
-                                    if (index >= 6 && index <= 11) {
+                                    if (index >=10 && index < 15) {
                                         const isFavorite = favorites.includes(index);
                                         return (
                                             <div key={index} className={cx('item-sale')}>
@@ -171,7 +170,7 @@ function Home() {
                                                     <img
                                                         onClick={() => handleToggleFavorite(index)}
                                                         className={cx('like-product')}
-                                                        src={isFavorite ? images.iconFullHeart : images.iconBorderHeart}
+                                                        src={isFavorite ? icons.iconFullHeart : icons.iconBorderHeart}
                                                     />
                                                 </div>
                                                 <div className={cx('info-product')}>
@@ -179,11 +178,11 @@ function Home() {
                                                         {product.name}
                                                     </p>
                                                     <div className='reviews-product'>
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconStar} />
-                                                        <img src={images.iconNonStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconStar} />
+                                                        <img src={icons.iconNonStar} />
                                                         <span className={cx('review')}>(73)</span>
                                                     </div>
                                                     <div className={cx('buy')}>
@@ -203,8 +202,8 @@ function Home() {
                             <span className={cx('dot')}></span>
                             <span className={cx('dot')}></span>
                         </div>
-                        <button className={cx('prev')}><img src={images.iconPrev} /></button>
-                        <button className={cx('next')}><img src={images.iconNext} /></button>
+                        <button className={cx('prev')}><img src={icons.iconPrev} /></button>
+                        <button className={cx('next')}><img src={icons.iconNext} /></button>
 
                     </div>
                 </div>
