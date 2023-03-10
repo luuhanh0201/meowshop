@@ -21,9 +21,9 @@ const listMenu = [
         className: 'cat-furniture'
     },
     {
-        path: '/cat-proof-home',
-        name: 'Cat Proof Home',
-        className: 'cat-proof'
+        path: '/shop-pet',
+        name: 'Shop Pet',
+        className: 'shop-pet'
     },
     {
         path: '/cat-feeders',

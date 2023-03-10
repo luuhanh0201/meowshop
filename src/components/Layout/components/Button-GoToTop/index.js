@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { images } from "~/assets/images";
+import { images } from "~/assets/icons";
 import styles from './Button-GoToTop.module.scss'
 import classNames from "classnames/bind";
 

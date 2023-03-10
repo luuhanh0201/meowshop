@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import styles from './Home.module.scss'
 import classNames from "classnames/bind";
-import { Category, Product } from '~/assets/FakeData/Data';
-import { images } from '~/assets/images';
+import { Category, Product, Blogs } from '~/assets/FakeData/Data';
+import { images } from '~/assets/icons';
 import { useState } from 'react';
 const cx = classNames.bind(styles)
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
         <div className={cx('wrapper')} >
             <div className={cx('inner')}>
                 <div className={cx('banner')}>
-                    <img src="https://lh3.googleusercontent.com/TZJXZBRLeaYuY7plSNyZNXZ3hftpjBjcO0TLnN0E4usjLXp2QK-DElPxBcDP0kEG06Zwz4n7WGSGTTlBdOov7UWzj99CUDEGAKXxQs6a9w" />
+                    <img src="https://lh3.googleusercontent.com/_zYo84dvnJHdGow4mTz_TWQ4uUyTRt_QWZjP5FMgoxcLgXXBVM_ZFWarTBQ7tvTHkMYYJjXgudSicuZHOun_5dKTqM8Ph8EDRtvBKBY"/>
 
                     <div className={cx('seller')}>
                         <p className={cx('title-banner')}>CAT SUPPLIES</p>
@@ -50,6 +50,7 @@ function Home() {
                                             <div
                                                 style={{ backgroundImage: `url(${product.image})` }}
                                                 className={cx('img-product')}
+                                                title={product.name}
                                             >
                                                 <span className={cx('sale-product')}>{product.selling}</span>
                                                 <img
@@ -107,6 +108,7 @@ function Home() {
                                                 <div
                                                     style={{ backgroundImage: `url(${product.image})` }}
                                                     className={cx('img-product')}
+                                                    title={product.name}
                                                 >
 
                                                     <img
@@ -150,7 +152,7 @@ function Home() {
                     </div>
                 </div>
                 <div className={cx('best-selling')}>
-                <div className={cx('sale')}>
+                    <div className={cx('sale')}>
                         <p className={cx('title')}>Best Selling</p>
                         <div className={cx('inner-sale')}>
                             {/* items */}
@@ -163,6 +165,7 @@ function Home() {
                                                 <div
                                                     style={{ backgroundImage: `url(${product.image})` }}
                                                     className={cx('img-product')}
+                                                    title={product.name}
                                                 >
 
                                                     <img
@@ -205,7 +208,30 @@ function Home() {
 
                     </div>
                 </div>
-                <div className={cx('blog')}></div>
+                <div className={cx('blog')}>
+                    <p className={cx('title')}>Recent Blogs</p>
+                    <div className={cx('inner-blog')}>
+
+                        {Blogs.map((blog, index) => {
+                            if (index < 3) {
+                                return (
+                                    <div key={index} className={cx('item-blog')}>
+                                        <div className={cx('img-blog')}>
+                                            <img src={blog.image} />
+                                        </div>
+                                        <div className={cx('container-blog')}>
+                                            <div className={cx('blog-name')}><p className={cx('name-blog')}>{blog.title}</p></div>
+                                            <div className={cx('blog-content')}> <p className={cx('content-blog')}>{blog.previewContent}</p></div>
+
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        })}
+
+
+                    </div>
+                </div>
             </div>
         </div>
     );

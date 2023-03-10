@@ -14,10 +14,10 @@ import LogIn from "~/components/pages/LogIn";
 
 const publicRouters = [
     { path: '/', component: Home },
+    { path: '/shop-pet', component: CatProofHome },
+    { path: '/cat-food', component: CatFood }, 
     { path: '/cat-accessories', component: CatAccessories },
-    { path: '/cat-food', component: CatFood },
     { path: '/cat-furniture', component: CatFurniture },
-    { path: '/cat-proof-home', component: CatProofHome },
     { path: '/cat-feeders', component: CatFeeders },
     { path: '/cat-little-boxes', component: CatLittleBoxes },
     { path: '/cat-houses', component: CatHouses },

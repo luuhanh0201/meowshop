@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import styles from "./Footer.module.scss"
 import classNames from "classnames/bind";
-import { images } from "~/assets/images";
+import { images } from "~/assets/icons";
 
 const cx = classNames.bind(styles)
 
